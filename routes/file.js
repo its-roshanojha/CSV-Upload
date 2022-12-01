@@ -6,10 +6,10 @@ const express = require("express");
 const router = express.Router();
 
 /**************IMPORTING CONTROLLERS*****************************/
-const uploadController = require("../controller/upload_controller");
+const fileController = require("../controller/file_controller.js");
+
 /**********************MAKING ROUTES*****************************/
-router.post("/", uploadController.Upload);
-router.use("/file", require("./file"));
+router.get("/:file", fileController.View);
 
 /*****************EXPORTING ROUTER*******************************/
 module.exports = router;
