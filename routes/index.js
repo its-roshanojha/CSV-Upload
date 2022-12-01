@@ -9,6 +9,7 @@ const homeController = require("../controller/home_controller");
 
 router.get("/", homeController.Index);
 router.use("/upload", require("./upload.js"));
+router.use("/delete", require("./delete"));
 
 /*****************EXPORTING ROUTER*******************************/
 module.exports = router;
