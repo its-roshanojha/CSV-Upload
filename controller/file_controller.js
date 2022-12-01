@@ -19,14 +19,14 @@ module.exports.View = async function(req, res){
         headers.map((head) => {
             header.push(head);
         });
-        console.log(header);
+        // console.log(header);
     })
     .on('data', (data) =>
     results.push(data))
     .on('end', () => {
-        console.log(header);
+        // console.log(header);
         console.log(results.length);
-        console.log(results);
+        // console.log(results);
         res.render("file", {
             title: filePATH.originalName,
             head: header,
