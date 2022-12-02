@@ -1,8 +1,11 @@
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: #292929;
+  color: aliceblue;
 }
 #search-box {
-  margin: 10px 0px 25px 0px;
+  margin: 50px 0px 50px 0px;
+  margin-left: 480px;
+  justify-content: center;
 }
 
 #search {
@@ -26,4 +29,8 @@ body {
   text-decoration: none;
   color: white;
   margin-top: 2px;
+}
+table{
+  border: 1px solid rgb(70, 70, 70);
+  margin: auto;
 }
