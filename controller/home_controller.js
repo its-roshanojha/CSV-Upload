@@ -7,7 +7,7 @@ const path = require("path");
 module.exports.Index = async function(req, res){
     try{
         let files = await File.find({});
-        res.render("home", {
+        res.render("index", {
             file: files
         });
     }catch(err){
